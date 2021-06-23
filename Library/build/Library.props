@@ -1,5 +1,5 @@
 <Project>
   <ItemGroup>
-    <DefaultGlobalUsingFiles Include="$(MSBuildThisFileDirectory)Library.DefaultGlobalUsing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library.DefaultGlobalUsing.cs" />
   </ItemGroup>
 </Project>
