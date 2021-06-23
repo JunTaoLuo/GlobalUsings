@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="build/*.cs" />
+    <None Include="build/**/*.*" Pack="true">
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
