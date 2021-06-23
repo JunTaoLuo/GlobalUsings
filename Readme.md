@@ -1,5 +1,7 @@
 # Default global usings
 
+## To run
+
 1. Edit SDK with changes in https://github.com/dotnet/sdk/pull/18459
 2. Pack Library: `dotnet pack .\Library\Library.csproj`
 2. Restore App: `dotnet restore -s Library\bin\Debug .\App\App.csproj`
@@ -13,3 +15,4 @@
    3. Can opt out with `<EnableGlobalUsingFiles>false</EnableGlobalUsingFiles>`
 2. Global usings from PackageReference
    1. Library packages can append to the item group `DefaultGlobalUsingFiles` to include a set of default global usings for types in the library.
+   2. This needs a second restore/build since the first restore generates the nuget.g.props files and the second restore/build includes the default global using file from the package.
